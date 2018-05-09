@@ -1,0 +1,12 @@
+
+<form class="form-horizontal">
+<div class="form-group">
+    <label for="Search" class="col-sm-2 control-label">Search patient data</label>
+    <div class="col-sm-6">
+        <input type="text" class="form-control" placeholder="Search by PATIENT Name" ng-model="search" required>
+    </div>
+</div>
+</form>
+<div class="row">
+    <list-results patients-object="person" ng-repeat="person in patients | filter:search"></list-results>
+</div>

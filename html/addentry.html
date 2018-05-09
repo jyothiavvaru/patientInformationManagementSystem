@@ -1,0 +1,74 @@
+<div class="container">
+    <form class="form-horizontal" action="#/records">
+        <div class="form-group">
+            <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="firstname" placeholder="First name" ng-model="firstname" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="lastname" placeholder="Last name" ng-model="lastname" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputBirthDate" class="col-sm-2 control-label">Birth Date</label>
+            <div class="col-sm-2">
+                <input type="date" class="form-control" id="birthdate" placeholder="Birth date" ng-model="birthdate" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputSex" class="col-sm-2 control-label">Sex</label>
+            <div class="col-sm-2">
+                <select class="form-control" id="sex" ng-model="sex">
+                    <option>- select -</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Not Specified</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputMStatus" class="col-sm-2 control-label">Marital Status</label>
+            <div class="col-sm-2">
+                <select class="form-control" id="status" ng-model="status">
+                    <option>- select -</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                    <option>Complicated</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAge" class="col-sm-2 control-label">Age</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" id="age" placeholder="Age" min="1" ng-model="age" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress" class="col-sm-2 control-label">Address</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="addressline1" placeholder="Street Address" >
+                <input type="text" class="form-control" id="addressline2" placeholder="Address line 2" >
+                <input type="text" class="form-control" id="city" placeholder="City" ng-model="city" >
+                <input type="text" class="form-control" id="state" placeholder="State" ng-model="state" >
+                <input type="text" class="form-control" id="zipcode" placeholder="Zip code" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputBloodGroup" class="col-sm-2 control-label">Blood Group</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="lastname" placeholder="Blood group" ng-model="bloodgroup" >
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success" ng-click="validate()">Add into database</button>
+                <button type="reset" class="btn btn-success">Reset fields</button>
+            </div>
+        </div>
+    </form>
+</div>
